@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Forms\Components\TextInput;
 use App\Filament\Resources\LayananResource\Pages;
 use App\Filament\Resources\LayananResource\RelationManagers;
 use App\Models\Layanan;
@@ -23,7 +24,13 @@ class LayananResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('kode')
+                ->label('Kode Layanan')
+                ->required(),
+
+            TextInput::make('nama')
+                ->label('Nama Layanan')
+                ->required(),
             ]);
     }
 
