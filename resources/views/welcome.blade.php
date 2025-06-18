@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 
 <html lang="en" class="no-js">
@@ -8,7 +7,7 @@
         <title>Service Kendaraan</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
-        <meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description"/>
+        <meta content="FlameOnePage freebie ytheme for web startups by FairTech SEO." name="description"/>
         <meta content="FairTech" name="author"/>
        <!-- CSS -->
 <link href="{{ asset('assets/vendor/simple-line-icons/simple-line-icons.min.css') }}" rel="stylesheet" type="text/css"/>
@@ -725,16 +724,6 @@
                                 <li class="footer-list-item"><a href="#about">Team</a></li>
                                 <li class="footer-list-item"><a href="#work">Credentials</a></li>
                                 <li class="footer-list-item"><a href="#contact">Contact</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#">Twitter</a></li>
-                                <li class="footer-list-item"><a href="#">Facebook</a></li>
-                                <li class="footer-list-item"><a href="#">Instagram</a></li>
-                                <li class="footer-list-item"><a href="#">YouTube</a></li>
                             </ul>
                             <!-- End List -->
                         </div>
