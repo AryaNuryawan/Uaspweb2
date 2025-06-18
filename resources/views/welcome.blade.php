@@ -5,7 +5,7 @@
    
     <head>
         <meta charset="utf-8"/>
-        <title>FlameOnePage Free Template by FairTech</title>
+        <title>Service Kendaraan</title>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta content="width=device-width, initial-scale=1" name="viewport"/>
         <meta content="FlameOnePage freebie theme for web startups by FairTech SEO." name="description"/>
@@ -76,24 +76,24 @@
 
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="img-responsive" src="{{ assets('assets/img/1920x1080/01.jpg') }}" alt="Slider Image">
+                    <img class="img-responsive" src="{{ asset('assets/img/1920x1080/01.jpg') }}" alt="Slider Image">
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
-                                <h1 class="carousel-title">Hi-End Solutions</h1>
-                                <p class="color-white">Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                                <h1 class="carousel-title">Service Kendaraan</h1>
+                                <p class="color-white">Jaga performa kendaraan Anda dengan servis berkala dari kami! Cepat, terpercaya, dan hasil maksimal agar kendaraan selalu prima di jalan. Yuk, servis sekarang!</p>
                             </div>
                             <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Details</a>
                         </div>
                     </div>
                 </div>
                 <div class="item">
-                    <img class="img-responsive" src="{{ assets('assets/img/1920x1080/02.jpg') }}" alt="Slider Image">
+                        <img class="img-responsive" src="{{ asset('assets/img/1920x1080/02.jpg') }}" alt="Slider Image">
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
                                 <h2 class="carousel-title">Personal Approach</h2>
-                                <p class="color-white">Lorem ipsum dolor amet consectetur adipiscing dolore magna aliqua <br/> enim minim estudiat veniam siad venumus dolore</p>
+                                <p class="color-white">Kami menyediakan layanan servis kendaraan berkualitas dengan teknisi berpengalaman  <br/> dan sistem pemesanan online yang mudah.</p>
                             </div>
                             <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Take a Tour</a>
                         </div>
@@ -113,23 +113,23 @@
                     <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 sm-margin-b-30">
                         <div class="margin-b-60">
                             <h2>Harmonious Planning</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
+                          <p>Jaga performa kendaraan Anda dengan servis berkala dari kami! Cepat, terpercaya, dan hasil maksimal agar kendaraan selalu prima di jalan. Yuk, servis sekarang!</p>
                         </div>
-                        <img class="full-width img-responsive wow fadeInUp" src="{{ assets('assets/img/500x500/01.jpg') }}" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
+                        <img class="full-width img-responsive wow fadeInUp" src="{{ asset('assets/img/500x500/01.jpg') }}" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".2s">
                     </div>
                     <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
                         <div class="margin-b-60">
                           <h2>Easy Integration</h2>
                           <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>  
                         </div>
-						 <img class="full-width img-responsive wow fadeInUp" src="{{ assets('assets/img/500x500/02.jpg') }}" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
+						 <img class="full-width img-responsive wow fadeInUp" src="{{ asset('assets/img/500x500/02.jpg') }}" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".3s">
                     </div>
                     <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
                         <div class="margin-t-60 margin-b-60">
                             <h2>Superior Support</h2>
                             <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna ut consequat siad esqudiat dolor</p>
                         </div>
-                        <img class="full-width img-responsive wow fadeInUp" src="{{ assets('assets/img/500x500/03.jpg') }}" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
+                        <img class="full-width img-responsive wow fadeInUp" src="{{ asset('assets/img/500x500/03.jpg') }}" alt="Portfolio Image" data-wow-duration=".3" data-wow-delay=".4s">
                     </div>
 				</div>
                 <!-- End Masonry Grid -->
@@ -217,7 +217,7 @@
                     <!-- Latest Products -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <img class="img-responsive" src="{{ assets('assets/img/970x647/01.jpg') }}" alt="Latest Products Image">
+                            <img class="img-responsive" src="{{ asset('assets/img/970x647/01.jpg') }}" alt="Latest Products Image">
                         </div>
                         <h4><a href="#">Interior</a> <span class="text-uppercase margin-l-20">Architecture</span></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
@@ -228,7 +228,7 @@
                     <!-- Latest Products -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <img class="img-responsive" src="{{ assets('assets/img/970x647/02.jpg') }}" alt="Latest Products Image">
+                            <img class="img-responsive" src="{{ asset('assets/img/970x647/02.jpg') }}" alt="Latest Products Image">
                         </div>
                         <h4><a href="#">Trend</a> <span class="text-uppercase margin-l-20">Setting</span></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
@@ -239,7 +239,7 @@
                     <!-- Latest Products -->
                     <div class="col-sm-4 sm-margin-b-50">
                         <div class="margin-b-20">
-                            <img class="img-responsive" src="{{ assets('assets/img/970x647/03.jpg') }}" alt="Latest Products Image">
+                            <img class="img-responsive" src="{{ asset('assets/img/970x647/03.jpg') }}" alt="Latest Products Image">
                         </div>
                         <h4><a href="#">Fresh Style</a> <span class="text-uppercase margin-l-20">Philosophy</span></h4>
                         <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
@@ -335,7 +335,7 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ assets('assets/img/397x300/01.jpg') }}" alt="Portfolio Image">
+                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x300/01.jpg') }}" alt="Portfolio Image">
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -374,7 +374,7 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ assets('assets/img/397x300/02.jpg') }}" alt="Portfolio Image">
+                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x300/02.jpg') }}" alt="Portfolio Image">
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -413,7 +413,7 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ assets('assets/img/397x300/03.jpg') }}" alt="Portfolio Image">
+                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x300/03.jpg') }}" alt="Portfolio Image">
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -453,7 +453,7 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ assets('assets/img/397x415/01.jpg') }}" alt="Portfolio Image">
+                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x415/01.jpg') }}" alt="Portfolio Image">
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -492,7 +492,7 @@
                             <!-- Work -->
                             <div class="work work-popup-trigger">
                                 <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ assets('assets/img/800x400/01.jpg') }}" alt="Portfolio Image">
+                                    <img class="full-width img-responsive" src="{{ asset('assets/img/800x400/01.jpg') }}" alt="Portfolio Image">
                                 </div>
                                 <div class="work-popup-overlay">
                                     <div class="work-popup-content">
@@ -539,22 +539,22 @@
                     <!-- Swiper Wrapper -->
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="{{ assets('assets/img/clients/01.png') }}" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="{{ asset('assets/img/clients/01.png') }}" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="{{ assets('assets/img/clients/02.png') }}" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="{{ asset('assets/img/clients/02.png') }}" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="{{ assets('assets/img/clients/03.png') }}" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="{{ asset('assets/img/clients/03.png') }}" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="{{ assets('assets/img/clients/04.png') }}" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="{{ asset('assets/img/clients/04.png') }}" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="{{ assets('assets/img/clients/05.png') }}" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="{{ asset('assets/img/clients/05.png') }}" alt="Clients Logo">
                         </div>
                         <div class="swiper-slide">
-                            <img class="swiper-clients-img" src="{{ assets('assets/img/clients/06.png') }}" alt="Clients Logo">
+                            <img class="swiper-clients-img" src="{{ asset('assets/img/clients/06.png') }}" alt="Clients Logo">
                         </div>
                     </div>
                     <!-- End Swiper Wrapper -->
@@ -758,7 +758,7 @@
             <div class="content container">
                 <div class="row">
                     <div class="col-xs-6">
-                        <img class="footer-logo" src="{{ assets('assets/img/logo-dark.png') }}" alt="flameonepage Logo">
+                        <img class="footer-logo" src="{{ asset('assets/img/logo-dark.png') }}" alt="flameonepage Logo">
                     </div>
                     <div class="col-xs-6 text-right">
                         <p class="margin-b-0"><a class="fweight-700" href="#">FlameOnePage</a> Theme Powered by: <a class="fweight-700" href="http://ft-seo.ch/">FairTech Studio</a></p>
