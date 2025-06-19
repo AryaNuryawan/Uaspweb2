@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+
 use App\Filament\Resources\DetailLayananResource\Pages;
 use App\Filament\Resources\DetailLayananResource\RelationManagers;
 use App\Models\DetailLayanan;
@@ -10,6 +11,8 @@ use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
+use Filament\Forms\Components\Select; //penambahan
+use Filament\Forms\Components\TextInput; //penambahan
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 
@@ -23,7 +26,23 @@ class DetailLayananResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('pekerjaan')->required(),
+
+            TextInput::make('biaya')
+                ->numeric()
+                ->required(),
+
+            Select::make('layanan_id')
+                ->relationship('layanan', 'nama')
+                ->searchable()
+                ->preload()
+                ->required(),
+
+            Select::make('pj_montir_id')
+                ->relationship('pjMontir', 'nama')
+                ->searchable()
+                ->preload()
+                ->required(),
             ]);
     }
 

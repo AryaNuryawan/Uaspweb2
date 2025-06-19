@@ -2,6 +2,7 @@
 
 namespace App\Filament\Resources;
 
+use Filament\Forms\Components\TextInput; // baru
 use App\Filament\Resources\KategoriMontirResource\Pages;
 use App\Filament\Resources\KategoriMontirResource\RelationManagers;
 use App\Models\KategoriMontir;
@@ -23,7 +24,9 @@ class KategoriMontirResource extends Resource
     {
         return $form
             ->schema([
-                //
+                TextInput::make('nama')
+                ->required()
+                ->maxLength(255),
             ]);
     }
 
