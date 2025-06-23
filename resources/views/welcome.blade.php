@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" class="no-js">
-   
+
 <head>
     <meta charset="utf-8"/>
     <title>Service Kendaraan</title>
@@ -27,8 +27,8 @@
 
 
 
-   
-  
+
+
     <body id="body" data-spy="scroll" data-target=".header">
 
           <header class="header navbar-fixed-top">
@@ -50,15 +50,15 @@
                     </div>
 
                     <div class="collapse navbar-collapse nav-collapse">
-					
+
 					<!--div class="language-switcher">
 					  <ul class="nav-lang">
                         <li><a class="active" href="#">EN</a></li>
 					    <li><a href="#">DE</a></li>
 						<li><a href="#">FR</a></li>
 					  </ul>
-					</div---> 
-					
+					</div--->
+
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
@@ -66,7 +66,7 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#paket">Paket</a></li>
 								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Services</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Products</a></li>
-								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Login</a></li>
+								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="{{url('/admin/login')}}">Login</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -74,7 +74,7 @@
                 </div>
             </nav>
 			</header>
-       
+
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="container">
                 <ol class="carousel-indicators">
@@ -250,7 +250,7 @@
 </div>
 
 
-            
+
            <!-- ========== WHY US SECTION ========== -->
 <style>
   body {
@@ -313,9 +313,9 @@
         <div class="margin-t-50 margin-b-30">
           <h2>Mengapa Memilih Kami?</h2>
           <p>
-            Di bengkel kami, pelayanan bukan hanya soal memperbaiki kendaraan, tapi tentang memberikan rasa tenang kepada Anda. 
-            Kami mengutamakan kejujuran, kecepatan, dan ketepatan dalam setiap servis. Dengan teknisi yang bersertifikat, 
-            alat modern, serta sistem kerja efisien, kami pastikan kendaraan Anda kembali prima dalam waktu singkat. 
+            Di bengkel kami, pelayanan bukan hanya soal memperbaiki kendaraan, tapi tentang memberikan rasa tenang kepada Anda.
+            Kami mengutamakan kejujuran, kecepatan, dan ketepatan dalam setiap servis. Dengan teknisi yang bersertifikat,
+            alat modern, serta sistem kerja efisien, kami pastikan kendaraan Anda kembali prima dalam waktu singkat.
             Kami hadir untuk membantu Anda menjaga performa kendaraan dengan standar tertinggi dan harga yang kompetitif.
           </p>
         </div>
@@ -950,7 +950,7 @@
                     <!-- End Masonry Grid -->
                 </div>
             </div>
-            
+
             <!-- Clients -->
             <div class="content-lg container">
                 <!-- Swiper Clients -->
@@ -1006,7 +1006,7 @@
                                     <h3>Servis Berkala Kendaraan</h3>
                                     <p class="margin-b-5">Ganti oli, filter, pengecekan rem, ban, aki & semua komponen rutin.</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-4 sm-margin-b-2">
@@ -1018,7 +1018,7 @@
                                     <h3 class="color-white">Pemeriksaan & Diagnostik</h3>
                                     <p class="color-white margin-b-5">Cek menyeluruh semua sistem kendaraan, termasuk ECU & komponen elektronik.</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -1030,7 +1030,7 @@
                                     <h3>Servis Berkala & Tune Up</h3>
                                     <p class="margin-b-5">Layanan berkala sesuai kilometer, termasuk penggantian oli, filter, dan pengecekan mesin agar performa tetap optimal.</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -1046,7 +1046,7 @@
                                     <h3>Servis Sistem Rem & Suspensi</h3>
                                     <p class="margin-b-5">Perbaikan rem cakram, kampas rem, dan suspensi untuk kenyamanan berkendara.</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-4 sm-margin-b-2">
@@ -1058,7 +1058,7 @@
                                     <h3>Penggantian Suku Cadang</h3>
                                     <p class="margin-b-5">	Ganti komponen aus seperti rantai, kampas kopling, busi, aki, dll.</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                         <div class="col-sm-4">
@@ -1070,7 +1070,7 @@
                                     <h3>Layanan Darurat & Booking</h3>
                                     <p class="margin-b-5">Booking servis online dan bantuan darurat jika mogok di jalan.</p>
                                 </div>
-                                <a href="#" class="content-wrapper-link"></a>    
+                                <a href="#" class="content-wrapper-link"></a>
                             </div>
                         </div>
                     </div>
@@ -1079,7 +1079,7 @@
             </div>
         </div>
         <!-- End Service -->
-            
+
         <!-- Contact -->
         <div id="contact">
             <!-- Contact List -->
@@ -1123,7 +1123,7 @@
                 </div>
             </div>
             <!-- End Contact List -->
-            
+
             <!-- Google Map -->
             <div class="map height-300">
 			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.0694570748947!2d7.455080415208266!3d46.94067397914616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39d0cf20e8d1%3A0x9daac4cd3043d067!2sThunstrasse+50%2C+3005+Bern%2C+Switzerland!5e0!3m2!1sen!2sin!4v1496749852928" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
