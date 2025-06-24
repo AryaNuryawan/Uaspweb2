@@ -16,9 +16,9 @@ return new class extends Migration
     $table->string('kode', 10);
     $table->string('nama', 100);
     $table->string('deskripsi', 200);
-    $table->unsignedBigInteger('jenis_layanan_id');
     $table->unsignedBigInteger('jenis_layanan_id')->nullable();
     $table->double('total_biaya');
+    $table->string('foto_kendaraan');
     $table->integer('rating')->nullable();
     $table->timestamps();
 });
