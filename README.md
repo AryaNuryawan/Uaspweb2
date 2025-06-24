@@ -1,8 +1,3 @@
-<p align="center">
-  <img src="https://cdn.pixabay.com/photo/2016/11/22/19/15/auto-1853304_960_720.jpg" alt="Car Service Logo" width="400"/>
-</p>
-
-
 
 <h1 align="center">🚗 Aplikasi Servis Kendaraan</h1>
 
