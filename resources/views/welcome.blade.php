@@ -990,7 +990,7 @@
                         <h3><a href="#" class="text-dark">Aisya Az Zahra</a><br><span class="text-uppercase">Customer Service</span></h3>
                         <p class="text-justify">Melayani dan membantu pelanggan dengan ramah, menjawab pertanyaan seputar layanan bengkel, serta memastikan pelanggan mendapatkan pengalaman terbaik sejak pertama kali menghubungi kami.</p>
                         <ul class="list-unstyled contact-list">
-                            <li><i class="margin-r-10 icon-call-out"></i> +41 60 66 555 44 33</li>
+                            <li><i class="margin-r-10 icon-call-out"></i> +6281234567</li>
                             <li><i class="margin-r-10 icon-envelope"></i> CS@flameonepage.com</li>
                         </ul>
                     </div>
@@ -1002,7 +1002,7 @@
                         <h3><a href="#" class="text-dark">Arya Nuryawan</a><br><span class="text-uppercase">Workshop Manager</span></h3>
                         <p class="text-justify">Mengawasi jalannya proses servis kendaraan di bengkel, memastikan teknisi bekerja sesuai standar, dan menjamin kendaraan pelanggan ditangani secara profesional dan tepat waktu.</p>
                         <ul class="list-unstyled contact-list">
-                            <li><i class="margin-r-10 icon-call-out"></i> +356 7965 1257</li>
+                            <li><i class="margin-r-10 icon-call-out"></i> +6289087676</li>
                             <li><i class="margin-r-10 icon-envelope"></i> WM@flameonepage.com</li>
                         </ul>
                     </div>
@@ -1014,7 +1014,7 @@
                         <h3><a href="#" class="text-dark">Riez Rafa R</a><br><span class="text-uppercase">Administrasi</span></h3>
                         <p class="text-justify">Bertanggung jawab atas pengelolaan data servis, pencatatan pelanggan, serta kelengkapan dokumen. Menjamin setiap layanan tercatat rapi dan mudah dilacak.</p>
                         <ul class="list-unstyled contact-list">
-                            <li><i class="margin-r-10 icon-call-out"></i> +44 654 583 5518</li>
+                            <li><i class="margin-r-10 icon-call-out"></i> +62898765676</li>
                             <li><i class="margin-r-10 icon-envelope"></i> administrasi@flameonepage.com</li>
                         </ul>
                     </div>
@@ -1026,7 +1026,7 @@
                         <h3><a href="#" class="text-dark">Yusuf Andika</a><br><span class="text-uppercase">Service Advisor</span></h3>
                         <p class="text-justify">Menjadi penghubung antara pelanggan dan teknisi, memberikan penjelasan mengenai kebutuhan servis, serta menyusun estimasi biaya dan waktu pengerjaan dengan transparan.</p>
                         <ul class="list-unstyled contact-list">
-                            <li><i class="margin-r-10 icon-call-out"></i> +81 90 1234 5678</li>
+                            <li><i class="margin-r-10 icon-call-out"></i> +62898767867</li>
                             <li><i class="margin-r-10 icon-envelope"></i> SA@flameonepage.com</li>
                         </ul>
                     </div>
