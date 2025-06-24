@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="https://img.icons8.com/external-flat-juicy-fish/64/000000/external-car-repair-garage-flat-flat-juicy-fish.png" alt="Car Service Logo" width="100"/>
+  <img src="https:https://www.google.com/imgres?q=gambar%20servis%20kendaraan&imgurl=https%3A%2F%2Fwww.adira.co.id%2Fimg%2Ffrontend%2Fnews%2Fthumb_1.%2520Car%2520Service.jpg&imgrefurl=https%3A%2F%2Fwww.adira.co.id%2Fdetail_berita%2Fmetalink%2Fyuk-lakukan-servis-mobil-berkala-kapan-saja-waktunya&docid=t9kF4cCLh7X0BM&tbnid=5lFdO-xJp-vxyM&vet=12ahUKEwih5MHQrIqOAxWtUGcHHb6KMDUQM3oFCIoBEAA..i&w=825&h=525&hcb=2&ved=2ahUKEwih5MHQrIqOAxWtUGcHHb6KMDUQM3oFCIoBEAA" alt="Car Service Logo" width="100"/>
 </p>
 
 <h1 align="center">🚗 Aplikasi Servis Kendaraan</h1>
@@ -43,9 +43,12 @@
 
 ---
 
-## 🖼️ Screenshot
+## Pengembang
+- Arya Nuryawan
+- Aisya Zahra
+- Yusuf Andika
+- Riez Rafa R
 
-> (Kamu bisa menambahkan screenshot hasil tampilan di sini)
 
 ---
 
