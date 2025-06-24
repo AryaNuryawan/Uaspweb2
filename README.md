@@ -1,6 +1,7 @@
 <p align="center">
-  <img src="https://img.icons8.com/external-flat-juicy-fish/64/000000/external-car-repair-garage-flat-flat-juicy-fish.png" alt="Car Service Logo" width="100"/>
+  <img src="https://cdn.pixabay.com/photo/2016/11/22/19/15/auto-1853304_960_720.jpg" alt="Car Service Logo" width="400"/>
 </p>
+
 
 
 <h1 align="center">🚗 Aplikasi Servis Kendaraan</h1>
