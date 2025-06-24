@@ -42,7 +42,7 @@
 
 ## Pengembang
 - Arya Nuryawan
-- Aisya Zahra
+- Aisya Az-Zahra
 - Yusuf Andika
 - Riez Rafa R
 
