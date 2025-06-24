@@ -16,7 +16,6 @@ class Montir extends Model
         'tmp_lahir',
         'keahlian',
         'kategori_montir_id',
-
     ];
     public function kategoriMontir()
     {

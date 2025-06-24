@@ -15,11 +15,8 @@ return new class extends Migration
     $table->id();
     $table->string('nomor');
     $table->string('nama', 50);
-<<<<<<< HEAD
     $table->char('gender', 1);
-=======
     $table->char('gender', 10);
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
     $table->date('tgl_lahir');
     $table->string('tmp_lahir', 30);
     $table->string('keahlian', 200);
