@@ -25,7 +25,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700;800&display=swap" rel="stylesheet">
 </head>
 
-
+<script>
+    // Smooth scroll behavior
+    document.querySelectorAll('a.scroll-link').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth'
+                });
+            }
+        });
+    });
+</script>
 
    
   
@@ -64,9 +77,8 @@
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#team">Team</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#paket">Paket</a></li>
-								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Services</a></li>
-                                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#products">Products</a></li>
-								<li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Login</a></li>
+								                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Service</a></li>
+								                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Login</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -85,7 +97,7 @@
 
             <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                    <img class="img-responsive" src="{{ asset('assets/img/1920x1080/01.jpg') }}" alt="Slider Image">
+                    <img class="img-responsive" src="{{ asset('assets/img/1920x1080/tempatt.jpeg') }}" alt="Slider Image">
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
@@ -96,14 +108,13 @@
                     </div>
                 </div>
                 <div class="item">
-                        <img class="img-responsive" src="{{ asset('assets/img/1920x1080/02.jpg') }}" alt="Slider Image">
+                        <img class="img-responsive" src="{{ asset('assets/img/1920x1080/tempattt.jpeg') }}" alt="Slider Image">
                     <div class="container">
                         <div class="carousel-centered">
                             <div class="margin-b-40">
                                 <h2 class="carousel-title">Service Kendaraan</h2>
                                 <p class="color-white">Kami menyediakan layanan servis kendaraan berkualitas dengan teknisi berpengalaman  <br/> dan sistem pemesanan online yang mudah.</p>
                             </div>
-                            <a href="#" class="btn-theme btn-theme-sm btn-white-brd text-uppercase">Take a Tour</a>
                         </div>
                     </div>
                 </div>
@@ -126,7 +137,7 @@
 
     /* Section Tim */
     .team-section {
-        background-color: rgb(232, 153, 57); /* ganti warna sesuai selera */
+        background-color: rgb(255, 184, 97); /* ganti warna sesuai selera */
         padding: 60px 0;
         width: 100%;
     }
@@ -230,21 +241,21 @@
         <div class="team-member">
             <img class="team-img" src="{{ asset('assets/img/team/team2.jpg') }}" alt="Aisyah C.">
             <h4>Arya Nuryawan</h4>
-            <p>Teknisi Mekanik</p>
+            <p>Workshop Manager</p>
         </div>
 
         <!-- Anggota 3 -->
         <div class="team-member">
             <img class="team-img" src="{{ asset('assets/img/team/team3.jpg') }}" alt="Putri N.">
-            <h4>Yusuf Andika</h4>
-            <p>Admin Bengkel</p>
+            <h4>Riez Rafa R</h4>
+            <p> Administrasi </p>
         </div>
 
         <!-- Anggota 4 -->
         <div class="team-member">
             <img class="team-img" src="{{ asset('assets/img/team/team4.jpg') }}" alt="Nurul A.">
-            <h4>Riez Rafa Roro</h4>
-            <p>Teknisi Elektrikal</p>
+            <h4>Yusuf Andika</h4>
+            <p>Service Advisor</p>
         </div>
     </div>
 </div>
@@ -472,7 +483,7 @@
   <style>
     .layanan-section {
       padding: 60px 0;
-      background-color: #fda170;
+      background-color: #fcfbfa;
     }
 
     .layanan-title {
@@ -602,7 +613,17 @@
 
     .pricing-list-item {
       margin-bottom: 8px;
+      color: #000 !important; /* tambahkan ini untuk membuat item jadi hitam pekat */
     }
+
+
+    .pricing-desc {
+      color: #000000 !important; /* ⬅ ini yang paling penting */
+      margin-bottom: 15px;
+      font-size: 15px;
+      line-height: 1.6;
+    }
+
 
     /* Baris Tinggi Sama */
     .row-equal {
@@ -660,7 +681,7 @@
   <!-- SECTION: PAKET SERVIS -->
   <div class="bg-orange">
     <div class="container">
-      <h2 id="paket" class="text-center mb-5">Paket Servis Kami</h2>
+      <h2 id="paket" class="text-center mb-5">Paket Layanan Kami</h2>
       <div class="row-equal">
         <!-- Silver -->
         <div class="col-custom">
@@ -668,14 +689,15 @@
             <img src="{{ asset('assets/img/paketservis/silver.jpeg') }}" alt="Silver Paket">
             <div>
               <h3>Silver Package <span> - Rp</span> 150.000</h3>
-              <p>Pemeriksaan umum & ganti oli ringan</p>
+              <p class="pricing-desc">Servis dasar untuk perawatan ringan dan rutin, cocok untuk pemilik mobil yang ingin menjaga performa harian tetap optimal tanpa biaya besar.</p>
               <ul class="list-unstyled pricing-list">
-                <li class="pricing-list-item">Starter Kit</li>
-                <li class="pricing-list-item">Basic Features</li>
-                <li class="pricing-list-item">Annual Report</li>
+                <li class="pricing-list-item">Pemeriksaan aki & sistem kelistrikan</li>
+                <li class="pricing-list-item">Ganti oli mesin & filter oli</li>
+                <li class="pricing-list-item">Pemeriksaan tekanan ban dan isi angin</li>
+                <li class="pricing-list-item">Pemeriksaan rem depan & belakang</li>
+                <li class="pricing-list-item">Pengecekan level air radiator & wiper</li>
               </ul>
             </div>
-            <a href="#" class="btn-theme btn-theme-sm btn-default-bg text-uppercase mt-3">Pesan Sekarang</a>
           </div>
         </div>
 
@@ -685,14 +707,15 @@
             <img src="{{ asset('assets/img/paketservis/gold.jpeg') }}" alt="Gold Paket">
             <div>
               <h3>Gold Package <span> - Rp</span> 300.000</h3>
-              <p>Semua layanan Silver + tune up ringan</p>
+              <p class="pricing-desc">Servis berkala dengan perawatan tambahan dan pengecekan lebih menyeluruh untuk menjaga performa mobil tetap prima di perjalanan jauh atau penggunaan aktif.</p>
               <ul class="list-unstyled pricing-list">
-                <li class="pricing-list-item">Professional Kit</li>
-                <li class="pricing-list-item">Full Options</li>
-                <li class="pricing-list-item">Bi-anual Report</li>
+                <li class="pricing-list-item">Semua layanan Silver Package</li>
+                <li class="pricing-list-item">Tune up ringan (cek & bersihkan busi, throttle body)</li>
+                <li class="pricing-list-item">Pemeriksaan dan penyetelan rem</li>
+                <li class="pricing-list-item">Pemeriksaan sistem AC ringan (filter kabin & blower)</li>
+                <li class="pricing-list-item">Pemeriksaan sistem pendingin</li>
               </ul>
             </div>
-            <a href="#" class="btn-theme btn-theme-sm btn-default-bg text-uppercase mt-3">Pesan Sekarang</a>
           </div>
         </div>
 
@@ -702,19 +725,22 @@
             <img src="{{ asset('assets/img/paketservis/platinum.jpeg') }}" alt="Platinum Paket">
             <div>
               <h3>Platinum Package <span> - Rp</span> 500.000</h3>
-              <p>Servis menyeluruh, injeksi, AC, dan rem</p>
+              <p class="pricing-desc">Servis menyeluruh untuk performa maksimal, cocok untuk pengguna intensif atau kendaraan yang akan menempuh perjalanan jauh.</p>
               <ul class="list-unstyled pricing-list">
-                <li class="pricing-list-item">Complete Kit</li>
-                <li class="pricing-list-item">Advanced Options</li>
-                <li class="pricing-list-item">Monthly Report</li>
+                <li class="pricing-list-item">Semua layanan Gold Package</li>
+                <li class="pricing-list-item">Pembersihan sistem injeksi (injector cleaning)</li>
+                <li class="pricing-list-item">Servis AC lengkap (freon, cuci evaporator, dll)</li>
+                <li class="pricing-list-item">Spooring & balancing roda</li>
+                <li class="pricing-list-item">Scan ECU (jika tersedia)</li>
               </ul>
             </div>
-            <a href="#" class="btn-theme btn-theme-sm btn-default-bg text-uppercase mt-3">Pesan Sekarang</a>
           </div>
         </div>
       </div>
     </div>
   </div>
+</div>
+
 
   <!-- SECTION: GAMBAR BERJALAN -->
   <div class="gambar-berjalan-wrapper">
@@ -728,228 +754,8 @@
     </div>
   </div>
 </div>
-
 <!-- End Pricing -->
 
-
-
-
-        <!-- Work -->
-        <div id="work">
-            <div class="section-seperator">
-                <div class="content-md container">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>Portfolio</h2>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incididunt ut laboret dolore magna aliqua enim minim veniam exercitation</p>
-                        </div>
-                    </div>
-                    <!--// end row -->
-
-                    <!-- Masonry Grid -->
-                    <div class="masonry-grid row">
-
-
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x300/01.jpg') }}" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> FairTech</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 md-margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x300/02.jpg') }}" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> Keenthemes</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x300/03.jpg') }}" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> Keenthemes</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-						<div class="masonry-grid-sizer col-xs-6 col-sm-6 col-md-1"></div>
-						<div class="masonry-grid-item col-xs-12 col-sm-6 col-md-4 margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ asset('assets/img/397x415/01.jpg') }}" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> FairTech</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                        <div class="masonry-grid-item col-xs-12 col-sm-6 col-md-8 margin-b-30">
-                            <!-- Work -->
-                            <div class="work work-popup-trigger">
-                                <div class="work-overlay">
-                                    <img class="full-width img-responsive" src="{{ asset('assets/img/800x400/01.jpg') }}" alt="Portfolio Image">
-                                </div>
-                                <div class="work-popup-overlay">
-                                    <div class="work-popup-content">
-                                        <a href="javascript:void(0);" class="work-popup-close">Hide</a>
-                                        <div class="margin-b-30">
-                                            <h3 class="margin-b-5">Art Of Coding</h3>
-                                            <span>Clean &amp; Minimalistic Design</span>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col-sm-8 work-popup-content-divider sm-margin-b-20">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-                                                    <ul class="list-inline work-popup-tag">
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Strategy,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Implementation,</a></li>
-                                                        <li class="work-popup-tag-item"><a class="work-popup-tag-link" href="#">Credentials</a></li>
-                                                    </ul>
-                                                </div>
-                                            </div>
-                                            <div class="col-sm-4">
-                                                <div class="margin-t-10 sm-margin-t-0">
-                                                    <p class="margin-b-5"><strong>Project Manager:</strong> Boris Becker</p>
-                                                    <p class="margin-b-5"><strong>Executive:</strong> Heike Macatsch</p>
-                                                    <p class="margin-b-5"><strong>Architect:</strong> Oliver Pocher</p>
-                                                    <p class="margin-b-5"><strong>Client:</strong> FairTech</p>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <!-- End Work -->
-                        </div>
-                    </div>
-                    <!-- End Masonry Grid -->
-                </div>
-            </div>
             
             <!-- Clients -->
             <div class="content-lg container">
@@ -984,184 +790,290 @@
         </div>
         <!-- End Work -->
 
-        <!-- Services -->
-        <div id="services">
-            <div class="bg-color-sky-light" data-auto-height="true">
-                <div class="content-lg container">
-                    <div class="row margin-b-40">
-                        <div class="col-sm-6">
-                            <h2>Layanan Bengkel Kami</h2>
-                            <p>Kami menyediakan layanan perawatan dan perbaikan kendaraan secara menyeluruh, dari pemeriksaan rutin hingga penggantian suku cadang.</p>
-                        </div>
-                    </div>
-                    <!--// end row -->
+<!-- Services -->
+<div id="services">
+  <style>
+    /* Judul utama warna hitam */
+    #services h2 {
+      color: #000;
+      font-weight: bold;
+    }
 
-                    <div class="row row-space-1 margin-b-2">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-chemistry"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Servis Berkala Kendaraan</h3>
-                                    <p class="margin-b-5">Ganti oli, filter, pengecekan rem, ban, aki & semua komponen rutin.</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service bg-color-base" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon color-white icon-screen-tablet"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3 class="color-white">Pemeriksaan & Diagnostik</h3>
-                                    <p class="color-white margin-b-5">Cek menyeluruh semua sistem kendaraan, termasuk ECU & komponen elektronik.</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Servis Berkala & Tune Up</h3>
-                                    <p class="margin-b-5">Layanan berkala sesuai kilometer, termasuk penggantian oli, filter, dan pengecekan mesin agar performa tetap optimal.</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                    </div>
-                    <!--// end row -->
+    /* Semua teks dalam section services warna hitam */
+    #services h3,
+    #services p,
+    #services .service-icon {
+      color: #000 !important;
+    }
 
-                    <div class="row row-space-1">
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-notebook"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Servis Sistem Rem & Suspensi</h3>
-                                    <p class="margin-b-5">Perbaikan rem cakram, kampas rem, dan suspensi untuk kenyamanan berkendara.</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4 sm-margin-b-2">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-speedometer"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Penggantian Suku Cadang</h3>
-                                    <p class="margin-b-5">	Ganti komponen aus seperti rantai, kampas kopling, busi, aki, dll.</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="service" data-height="height">
-                                <div class="service-element">
-                                    <i class="service-icon icon-badge"></i>
-                                </div>
-                                <div class="service-info">
-                                    <h3>Layanan Darurat & Booking</h3>
-                                    <p class="margin-b-5">Booking servis online dan bantuan darurat jika mogok di jalan.</p>
-                                </div>
-                                <a href="#" class="content-wrapper-link"></a>    
-                            </div>
-                        </div>
+    /* Semua kotak layanan putih dengan shadow */
+    .service {
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      padding: 25px;
+    }
+  </style>
+
+  <!-- Section background oranye -->
+  <div style="background-color: #ff6f00;" data-auto-height="true">
+    <div class="content-lg container">
+      <div class="row margin-b-40">
+        <div class="col-sm-6">
+          <h2>Service Kendaraan Kami</h2>
+          <p>Kami menyediakan layanan perawatan dan perbaikan kendaraan secara menyeluruh, dari pemeriksaan rutin hingga penggantian suku cadang.</p>
+        </div>
+      </div>
+
+      <!-- Baris atas -->
+      <div class="row row-space-1 margin-b-2">
+        <div class="col-sm-4 sm-margin-b-2">
+          <div class="service" data-height="height">
+            <div class="service-element">
+              <i class="service-icon icon-chemistry"></i>
+            </div>
+            <div class="service-info">
+              <h3>Servis Berkala Kendaraan</h3>
+              <p class="margin-b-5">Ganti oli, filter, pengecekan rem, ban, aki & semua komponen rutin.</p>
+            </div>
+            <a href="#" class="content-wrapper-link"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 sm-margin-b-2">
+          <div class="service" data-height="height">
+            <div class="service-element">
+              <i class="service-icon icon-screen-tablet"></i>
+            </div>
+            <div class="service-info">
+              <h3>Pemeriksaan & Diagnostik</h3>
+              <p class="margin-b-5">Cek menyeluruh semua sistem kendaraan, termasuk ECU & komponen elektronik.</p>
+            </div>
+            <a href="#" class="content-wrapper-link"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="service" data-height="height">
+            <div class="service-element">
+              <i class="service-icon icon-badge"></i>
+            </div>
+            <div class="service-info">
+              <h3>Servis Berkala & Tune Up</h3>
+              <p class="margin-b-5">Layanan berkala sesuai kilometer, termasuk penggantian oli, filter, dan pengecekan mesin agar performa tetap optimal.</p>
+            </div>
+            <a href="#" class="content-wrapper-link"></a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Baris bawah -->
+      <div class="row row-space-1">
+        <div class="col-sm-4 sm-margin-b-2">
+          <div class="service" data-height="height">
+            <div class="service-element">
+              <i class="service-icon icon-notebook"></i>
+            </div>
+            <div class="service-info">
+              <h3>Servis Sistem Rem & Suspensi</h3>
+              <p class="margin-b-5">Perbaikan rem cakram, kampas rem, dan suspensi untuk kenyamanan berkendara.</p>
+            </div>
+            <a href="#" class="content-wrapper-link"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4 sm-margin-b-2">
+          <div class="service" data-height="height">
+            <div class="service-element">
+              <i class="service-icon icon-speedometer"></i>
+            </div>
+            <div class="service-info">
+              <h3>Penggantian Suku Cadang</h3>
+              <p class="margin-b-5">Ganti komponen aus seperti rantai, kampas kopling, busi, aki, dll.</p>
+            </div>
+            <a href="#" class="content-wrapper-link"></a>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+          <div class="service" data-height="height">
+            <div class="service-element">
+              <i class="service-icon icon-badge"></i>
+            </div>
+            <div class="service-info">
+              <h3>Layanan Darurat & Booking</h3>
+              <p class="margin-b-5">Booking servis online dan bantuan darurat jika mogok di jalan.</p>
+            </div>
+            <a href="#" class="content-wrapper-link"></a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- End Services -->
+
+
+<!-- Contact -->
+<section id="contact">
+    <style>
+        .text-justify {
+            text-align: justify;
+        }
+
+        .text-dark {
+            color: #000;
+        }
+
+        .contact-list i {
+            color: #000;
+        }
+
+        .contact-box {
+            border: 1px solid #ddd;
+            padding: 20px;
+            border-radius: 10px;
+            background-color: #fff;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .contact-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-box h3, .contact-box p, .contact-box ul {
+            color: #000;
+        }
+
+        /* Responsive height equalizer */
+        .contact-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .contact-col {
+            flex: 1 1 calc(25% - 20px);
+            display: flex;
+        }
+
+        @media (max-width: 768px) {
+            .contact-col {
+                flex: 1 1 100%;
+            }
+        }
+
+        /* WOW.js animation visibility fix */
+        @import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+
+        .wow {
+            visibility: hidden;
+        }
+    </style>
+
+    <!-- WOW.js for animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js"></script>
+    <script> new WOW().init(); </script>
+
+    <div class="section-seperator">
+        <div class="content-lg container">
+            <div class="contact-row">
+
+                <!-- Kontak 1 -->
+                <div class="contact-col wow animate__animated animate__fadeInUp" data-wow-delay="0.1s">
+                    <div class="contact-box text-dark">
+                        <h3><a href="#" class="text-dark">Aisya Az Zahra</a><br><span class="text-uppercase">Customer Service</span></h3>
+                        <p class="text-justify">Melayani dan membantu pelanggan dengan ramah, menjawab pertanyaan seputar layanan bengkel, serta memastikan pelanggan mendapatkan pengalaman terbaik sejak pertama kali menghubungi kami.</p>
+                        <ul class="list-unstyled contact-list">
+                            <li><i class="margin-r-10 icon-call-out"></i> +41 60 66 555 44 33</li>
+                            <li><i class="margin-r-10 icon-envelope"></i> CS@flameonepage.com</li>
+                        </ul>
                     </div>
-                    <!--// end row -->
                 </div>
+
+                <!-- Kontak 2 -->
+                <div class="contact-col wow animate__animated animate__fadeInUp" data-wow-delay="0.2s">
+                    <div class="contact-box text-dark">
+                        <h3><a href="#" class="text-dark">Arya Nuryawan</a><br><span class="text-uppercase">Workshop Manager</span></h3>
+                        <p class="text-justify">Mengawasi jalannya proses servis kendaraan di bengkel, memastikan teknisi bekerja sesuai standar, dan menjamin kendaraan pelanggan ditangani secara profesional dan tepat waktu.</p>
+                        <ul class="list-unstyled contact-list">
+                            <li><i class="margin-r-10 icon-call-out"></i> +356 7965 1257</li>
+                            <li><i class="margin-r-10 icon-envelope"></i> WM@flameonepage.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kontak 3 -->
+                <div class="contact-col wow animate__animated animate__fadeInUp" data-wow-delay="0.3s">
+                    <div class="contact-box text-dark">
+                        <h3><a href="#" class="text-dark">Riez Rafa R</a><br><span class="text-uppercase">Administrasi</span></h3>
+                        <p class="text-justify">Bertanggung jawab atas pengelolaan data servis, pencatatan pelanggan, serta kelengkapan dokumen. Menjamin setiap layanan tercatat rapi dan mudah dilacak.</p>
+                        <ul class="list-unstyled contact-list">
+                            <li><i class="margin-r-10 icon-call-out"></i> +44 654 583 5518</li>
+                            <li><i class="margin-r-10 icon-envelope"></i> administrasi@flameonepage.com</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Kontak 4 -->
+                <div class="contact-col wow animate__animated animate__fadeInUp" data-wow-delay="0.4s">
+                    <div class="contact-box text-dark">
+                        <h3><a href="#" class="text-dark">Yusuf Andika</a><br><span class="text-uppercase">Service Advisor</span></h3>
+                        <p class="text-justify">Menjadi penghubung antara pelanggan dan teknisi, memberikan penjelasan mengenai kebutuhan servis, serta menyusun estimasi biaya dan waktu pengerjaan dengan transparan.</p>
+                        <ul class="list-unstyled contact-list">
+                            <li><i class="margin-r-10 icon-call-out"></i> +81 90 1234 5678</li>
+                            <li><i class="margin-r-10 icon-envelope"></i> SA@flameonepage.com</li>
+                        </ul>
+                    </div>
+                </div>
+
             </div>
         </div>
-        <!-- End Service -->
-            
-        <!-- Contact -->
-        <div id="contact">
-            <!-- Contact List -->
-            <div class="section-seperator">
-                <div class="content-lg container">
-                    <div class="row">
-                        <!-- Contact List -->
-                        <div class="col-sm-4 sm-margin-b-50">
-                            <h3><a href="http://ft-seo.ch/">Zurich</a> <span class="text-uppercase margin-l-20">Human Resources</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                            <ul class="list-unstyled contact-list">
-                                <li><i class="margin-r-10 color-base icon-call-out"></i> +41 60 66 555 44 33</li>
-                                <li><i class="margin-r-10 color-base icon-envelope"></i> hr@flameonepage.com</li>
-                            </ul>
-                        </div>
-                        <!-- End Contact List -->
+    </div>
+</section>
+<!-- End Contact -->
 
-                        <!-- Contact List -->
-                        <div class="col-sm-4 sm-margin-b-50">
-                            <h3><a href="http://ft-seo.ch/">Malta</a> <span class="text-uppercase margin-l-20">Development</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                            <ul class="list-unstyled contact-list">
-                                <li><i class="margin-r-10 color-base icon-call-out"></i> +356 7965 1257</li>
-                                <li><i class="margin-r-10 color-base icon-envelope"></i> developmemt@flameonepage.com</li>
-                            </ul>
-                        </div>
-                        <!-- End Contact List -->
-
-                        <!-- Contact List -->
-                        <div class="col-sm-4 sm-margin-b-50">
-                            <h3><a href="http://ft-seo.ch/">Manchester</a> <span class="text-uppercase margin-l-20">CEO</span></h3>
-                            <p>Lorem ipsum dolor sit amet consectetur adipiscing elit sed tempor incdidunt ut laboret dolor magna ut consequat siad esqudiat dolor</p>
-                            <ul class="list-unstyled contact-list">
-                                <li><i class="margin-r-10 color-base icon-call-out"></i> +44 654 583 5518</li>
-                                <li><i class="margin-r-10 color-base icon-envelope"></i> ceo@flameonepage.com</li>
-                            </ul>
-                        </div>
-                        <!-- End Contact List -->
-                    </div>
-                    <!--// end row -->
-                </div>
-            </div>
-            <!-- End Contact List -->
-            
-            <!-- Google Map -->
-            <div class="map height-300">
-			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2724.0694570748947!2d7.455080415208266!3d46.94067397914616!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478e39d0cf20e8d1%3A0x9daac4cd3043d067!2sThunstrasse+50%2C+3005+Bern%2C+Switzerland!5e0!3m2!1sen!2sin!4v1496749852928" width="100%" height="100%" frameborder="0" style="border:0" allowfullscreen></iframe>
-			</div>
-        </div>
         <!-- End Contact -->
         <!--========== END PAGE LAYOUT ==========-->
 
+
+
         <!--========== FOOTER ==========-->
-        <footer class="footer">
-            <!-- Links -->
-            <div class="section-seperator">
-                <div class="content-md container">
-                    <div class="row">
-                        <div class="col-sm-2 sm-margin-b-30">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#body">Home</a></li>
-                                <li class="footer-list-item"><a href="#about">Team</a></li>
-                                <li class="footer-list-item"><a href="#work">Credentials</a></li>
-                                <li class="footer-list-item"><a href="#contact">Contact</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                        <div class="col-sm-3">
-                            <!-- List -->
-                            <ul class="list-unstyled footer-list">
-                                <li class="footer-list-item"><a href="#">Subscribe to Our Newsletter</a></li>
-                                <li class="footer-list-item"><a href="#">Privacy Policy</a></li>
-                                <li class="footer-list-item"><a href="#">Terms &amp; Conditions</a></li>
-                            </ul>
-                            <!-- End List -->
-                        </div>
-                    </div>
-                    <!--// end row -->
+        <<!-- Footer -->
+<footer class="footer">
+    <!-- Links -->
+    <div class="section-seperator" style="padding: 40px 0; background-color: #f7ddbd;">
+        <div class="content-md container" style="text-align: center;">
+            <div class="row justify-content-center">
+                <div class="col-sm-12">
+                    <!-- Navigation List -->
+                    <ul class="list-unstyled footer-list" style="list-style: none; padding: 0; margin: 0;">
+                        <li class="footer-list-item" style="display: inline-block; margin: 0 15px;">
+                            <a href="#body" class="scroll-link" style="text-decoration: none; color: #000;">Home</a>
+                        </li>
+                        <li class="footer-list-item" style="display: inline-block; margin: 0 15px;">
+                            <a href="#team" class="scroll-link" style="text-decoration: none; color: #000;">Team</a>
+                        </li>
+                        <li class="footer-list-item" style="display: inline-block; margin: 0 15px;">
+                            <a href="#services" class="scroll-link" style="text-decoration: none; color: #000;">Service</a>
+                        </li>
+                        <li class="footer-list-item" style="display: inline-block; margin: 0 15px;">
+                            <a href="#contact" class="scroll-link" style="text-decoration: none; color: #000;">Contact</a>
+                        </li>
+                    </ul>
+                    <!-- End Navigation List -->
+                    <p style="margin-top: 20px; font-size: 14px; color: #030202;">&copy; 2025 ServiceKendaraan</p>
                 </div>
             </div>
-            <!-- End Links -->
+        </div>
+    </div>
+</footer>
+
 
             <!-- Copyright -->
             <div class="content container">
@@ -1170,7 +1082,7 @@
                         <img class="footer-logo" src="{{ asset('assets/img/logo-dark.png') }}" alt="flameonepage Logo">
                     </div>
                     <div class="col-xs-6 text-right">
-                        <p class="margin-b-0"><a class="fweight-700" href="#">FlameOnePage</a> Theme Powered by: <a class="fweight-700" href="http://ft-seo.ch/">FairTech Studio</a></p>
+                        <p class="margin-b-0"><a class="fweight-700" href="#">Service Kendaraan</a> Theme Powered by: <a class="fweight-700" href="http://ft-seo.ch/">ARYA TEAM</a></p>
                     </div>
                 </div>
                 <!--// end row -->
