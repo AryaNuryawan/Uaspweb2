@@ -16,8 +16,7 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 class MontirResource extends Resource
 {
     protected static ?string $model = Montir::class;
-
-    protected static ?string $navigationIcon = 'heroicon-o-rectangle-stack';
+    protected static ?string $navigationIcon = 'heroicon-o-wrench-screwdriver';
 
     public static function form(Form $form): Form
     {
