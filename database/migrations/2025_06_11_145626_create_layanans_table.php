@@ -16,7 +16,11 @@ return new class extends Migration
     $table->string('kode', 10);
     $table->string('nama', 100);
     $table->string('deskripsi', 200);
+<<<<<<< HEAD
     $table->unsignedBigInteger('jenis_layanan_id');
+=======
+    $table->unsignedBigInteger('jenis_layanan_id')->nullable();
+>>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
     $table->double('total_biaya');
     $table->integer('rating')->nullable();
     $table->timestamps();
