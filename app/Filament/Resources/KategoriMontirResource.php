@@ -2,19 +2,6 @@
 
 namespace App\Filament\Resources;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\TextInput; // baru
-use App\Filament\Resources\KategoriMontirResource\Pages;
-use App\Filament\Resources\KategoriMontirResource\RelationManagers;
-use App\Models\KategoriMontir;
-use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
-use Filament\Tables;
-use Filament\Tables\Table;
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-=======
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
@@ -27,7 +14,6 @@ use Filament\Forms\Components\TextInput; // baru
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use App\Filament\Resources\KategoriMontirResource\Pages;
 use App\Filament\Resources\KategoriMontirResource\RelationManagers;
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
 
 class KategoriMontirResource extends Resource
 {
@@ -49,11 +35,7 @@ class KategoriMontirResource extends Resource
     {
         return $table
             ->columns([
-<<<<<<< HEAD
-                //
-=======
                  TextColumn::make('nama')
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
             ])
             ->filters([
                 //

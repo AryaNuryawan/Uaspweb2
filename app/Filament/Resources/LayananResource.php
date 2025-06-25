@@ -2,28 +2,17 @@
 
 namespace App\Filament\Resources;
 
-<<<<<<< HEAD
-use Filament\Forms\Components\TextInput;
 use App\Filament\Resources\LayananResource\Pages;
-use App\Filament\Resources\LayananResource\RelationManagers;
-=======
-use App\Filament\Resources\LayananResource\Pages;
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
 use App\Models\Layanan;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
-<<<<<<< HEAD
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-=======
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
 
 class LayananResource extends Resource
 {
@@ -36,14 +25,6 @@ class LayananResource extends Resource
         return $form
             ->schema([
                 TextInput::make('kode')
-<<<<<<< HEAD
-                ->label('Kode Layanan')
-                ->required(),
-
-            TextInput::make('nama')
-                ->label('Nama Layanan')
-                ->required(),
-=======
                     ->label('Kode Layanan')
                     ->required(),
 
@@ -66,7 +47,6 @@ class LayananResource extends Resource
                     ->minValue(0)
                     ->maxValue(5)
                     ->step(0.1),
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
             ]);
     }
 
@@ -74,15 +54,11 @@ class LayananResource extends Resource
     {
         return $table
             ->columns([
-<<<<<<< HEAD
-                //
-=======
                 TextColumn::make('kode')->label('Kode')->sortable()->searchable(),
                 TextColumn::make('nama')->label('Nama')->sortable()->searchable(),
                 TextColumn::make('deskripsi')->label('Deskripsi')->limit(30),
                 TextColumn::make('total_biaya')->label('Total Biaya')->money('IDR', true),
                 TextColumn::make('rating')->label('Rating')->sortable(),
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
             ])
             ->filters([
                 //

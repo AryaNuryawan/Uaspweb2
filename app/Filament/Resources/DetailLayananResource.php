@@ -3,20 +3,6 @@
 namespace App\Filament\Resources;
 
 
-<<<<<<< HEAD
-use App\Filament\Resources\DetailLayananResource\Pages;
-use App\Filament\Resources\DetailLayananResource\RelationManagers;
-use App\Models\DetailLayanan;
-use Filament\Forms;
-use Filament\Forms\Form;
-use Filament\Resources\Resource;
-use Filament\Tables;
-use Filament\Tables\Table;
-use Filament\Forms\Components\Select; //penambahan
-use Filament\Forms\Components\TextInput; //penambahan
-use Illuminate\Database\Eloquent\Builder;
-use Illuminate\Database\Eloquent\SoftDeletingScope;
-=======
 use Filament\Forms;
 use Filament\Tables;
 use Filament\Forms\Form;
@@ -31,7 +17,6 @@ use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Forms\Components\TextInput; //penambahan
 use App\Filament\Resources\DetailLayananResource\Pages;
 use App\Filament\Resources\DetailLayananResource\RelationManagers;
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
 
 class DetailLayananResource extends Resource
 {
@@ -67,14 +52,10 @@ class DetailLayananResource extends Resource
     {
         return $table
             ->columns([
-<<<<<<< HEAD
-                //
-=======
                 TextColumn::make('pekerjaan'),
                 TextColumn::make('biaya'),
                 TextColumn::make('layanan_id'),
                 TextColumn::make('pj_montir_id'),
->>>>>>> 384d341562436aeaf66d42acbb842eac06e43440
             ])
             ->filters([
                 //
