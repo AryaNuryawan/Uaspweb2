@@ -9,10 +9,19 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use App\Models\DetailLayanan;
 use Filament\Resources\Resource;
+use App\Filament\Resources\DetailLayananResource\Pages;
+use App\Filament\Resources\DetailLayananResource\RelationManagers;
+use App\Models\DetailLayanan;
+use Filament\Forms;
+use Filament\Forms\Form;
+use Filament\Forms\Components\Select; // penambahan
+use Filament\Forms\Components\TextInput; // penambahan
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
-use Illuminate\Database\Eloquent\Builder;
 use Filament\Tables\Columns\TextInputColumn;
-use Filament\Forms\Components\Select; //penambahan
+use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
 use Filament\Forms\Components\TextInput; //penambahan
 use App\Filament\Resources\DetailLayananResource\Pages;
@@ -30,21 +39,21 @@ class DetailLayananResource extends Resource
             ->schema([
                 TextInput::make('pekerjaan')->required(),
 
-            TextInput::make('biaya')
-                ->numeric()
-                ->required(),
+                TextInput::make('biaya')
+                    ->numeric()
+                    ->required(),
 
-            Select::make('layanan_id')
-                ->relationship('layanan', 'nama')
-                ->searchable()
-                ->preload()
-                ->required(),
+                Select::make('layanan_id')
+                    ->relationship('layanan', 'nama')
+                    ->searchable()
+                    ->preload()
+                    ->required(),
 
-            Select::make('pj_montir_id')
-                ->relationship('pjMontir', 'nama')
-                ->searchable()
-                ->preload()
-                ->required(),
+                Select::make('pj_montir_id')
+                    ->relationship('pjMontir', 'nama')
+                    ->searchable()
+                    ->preload()
+                    ->required(),
             ]);
     }
 

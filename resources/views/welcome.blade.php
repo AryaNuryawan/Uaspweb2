@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 
 <html lang="en" class="no-js">
-   
+
 <head>
     <meta charset="utf-8"/>
     <title>Service Kendaraan</title>
@@ -40,8 +40,8 @@
     });
 </script>
 
-   
-  
+
+
     <body id="body" data-spy="scroll" data-target=".header">
 
           <header class="header navbar-fixed-top">
@@ -63,22 +63,22 @@
                     </div>
 
                     <div class="collapse navbar-collapse nav-collapse">
-					
+
 					<!--div class="language-switcher">
 					  <ul class="nav-lang">
                         <li><a class="active" href="#">EN</a></li>
 					    <li><a href="#">DE</a></li>
 						<li><a href="#">FR</a></li>
 					  </ul>
-					</div---> 
-					
+					</div--->
+
                         <div class="menu-container">
                             <ul class="nav navbar-nav navbar-nav-right">
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#body">Home</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#team">Team</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#paket">Paket</a></li>
 								                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#services">Service</a></li>
-								                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#work">Login</a></li>
+								                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="/admin/login">Login</a></li>
                                 <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="#contact">Contact</a></li>
                             </ul>
                         </div>
@@ -86,7 +86,7 @@
                 </div>
             </nav>
 			</header>
-       
+
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <div class="container">
                 <ol class="carousel-indicators">
@@ -261,7 +261,7 @@
 </div>
 
 
-            
+
            <!-- ========== WHY US SECTION ========== -->
 <style>
   body {
@@ -324,9 +324,9 @@
         <div class="margin-t-50 margin-b-30">
           <h2>Mengapa Memilih Kami?</h2>
           <p>
-            Di bengkel kami, pelayanan bukan hanya soal memperbaiki kendaraan, tapi tentang memberikan rasa tenang kepada Anda. 
-            Kami mengutamakan kejujuran, kecepatan, dan ketepatan dalam setiap servis. Dengan teknisi yang bersertifikat, 
-            alat modern, serta sistem kerja efisien, kami pastikan kendaraan Anda kembali prima dalam waktu singkat. 
+            Di bengkel kami, pelayanan bukan hanya soal memperbaiki kendaraan, tapi tentang memberikan rasa tenang kepada Anda.
+            Kami mengutamakan kejujuran, kecepatan, dan ketepatan dalam setiap servis. Dengan teknisi yang bersertifikat,
+            alat modern, serta sistem kerja efisien, kami pastikan kendaraan Anda kembali prima dalam waktu singkat.
             Kami hadir untuk membantu Anda menjaga performa kendaraan dengan standar tertinggi dan harga yang kompetitif.
           </p>
         </div>
@@ -756,7 +756,7 @@
 </div>
 <!-- End Pricing -->
 
-            
+
             <!-- Clients -->
             <div class="content-lg container">
                 <!-- Swiper Clients -->

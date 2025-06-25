@@ -14,14 +14,12 @@ class CreateLayanan extends CreateRecord
     {
         // Contoh: ubah huruf besar kode otomatis
         $data['kode'] = strtoupper($data['kode']);
-
         return $data;
     }
 
-    // Opsional: logika setelah berhasil buat record
+    // Opsional: setelah record dibuat
     protected function afterCreate(): void
     {
-        // Bisa kasih notifikasi, log, dll
-        // Notification::make()->success()->title('Layanan berhasil ditambahkan')->send();
+        // Notifikasi atau aksi lainnya setelah create
     }
 }

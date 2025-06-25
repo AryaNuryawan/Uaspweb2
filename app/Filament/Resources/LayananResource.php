@@ -6,6 +6,9 @@ use App\Filament\Resources\LayananResource\Pages;
 use App\Models\Layanan;
 use Filament\Forms;
 use Filament\Forms\Form;
+use Filament\Forms\Components\TextInput;
+use Filament\Forms\Components\Textarea;
+use Filament\Forms\Components\FileUpload;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -13,6 +16,7 @@ use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
+use Filament\Tables\Columns\TextColumn;
 
 class LayananResource extends Resource
 {
@@ -39,6 +43,13 @@ class LayananResource extends Resource
                 TextInput::make('total_biaya')
                     ->label('Total Biaya')
                     ->numeric()
+                    ->required(),
+
+                FileUpload::make('foto_kendaraan')
+                    ->label('Foto Kendaraan')
+                    ->image()
+                    ->imagePreviewHeight('200')
+                    ->directory('fotos')
                     ->required(),
 
                 TextInput::make('rating')

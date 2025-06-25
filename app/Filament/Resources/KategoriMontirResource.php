@@ -8,10 +8,15 @@ use Filament\Forms\Form;
 use Filament\Tables\Table;
 use App\Models\KategoriMontir;
 use Filament\Resources\Resource;
+use Filament\Forms\Form;
+use Filament\Forms\Components\TextInput; // baru
+use Filament\Resources\Resource;
+use Filament\Tables;
+use Filament\Tables\Table;
 use Filament\Tables\Columns\TextColumn;
 use Illuminate\Database\Eloquent\Builder;
-use Filament\Forms\Components\TextInput; // baru
 use Illuminate\Database\Eloquent\SoftDeletingScope;
+use App\Models\KategoriMontir;
 use App\Filament\Resources\KategoriMontirResource\Pages;
 use App\Filament\Resources\KategoriMontirResource\RelationManagers;
 
@@ -26,8 +31,8 @@ class KategoriMontirResource extends Resource
         return $form
             ->schema([
                 TextInput::make('nama')
-                ->required()
-                ->maxLength(255),
+                    ->required()
+                    ->maxLength(255),
             ]);
     }
 
@@ -36,6 +41,7 @@ class KategoriMontirResource extends Resource
         return $table
             ->columns([
                  TextColumn::make('nama')
+                TextColumn::make('nama'),
             ])
             ->filters([
                 //
