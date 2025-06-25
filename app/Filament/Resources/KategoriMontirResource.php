@@ -3,13 +3,8 @@
 namespace App\Filament\Resources;
 
 use Filament\Forms;
-use Filament\Tables;
 use Filament\Forms\Form;
-use Filament\Tables\Table;
-use App\Models\KategoriMontir;
-use Filament\Resources\Resource;
-use Filament\Forms\Form;
-use Filament\Forms\Components\TextInput; // baru
+use Filament\Forms\Components\TextInput;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -40,7 +35,6 @@ class KategoriMontirResource extends Resource
     {
         return $table
             ->columns([
-                 TextColumn::make('nama')
                 TextColumn::make('nama'),
             ])
             ->filters([

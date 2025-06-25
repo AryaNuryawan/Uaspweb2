@@ -2,20 +2,10 @@
 
 namespace App\Filament\Resources;
 
-
-use Filament\Forms;
-use Filament\Tables;
-use Filament\Forms\Form;
-use Filament\Tables\Table;
-use App\Models\DetailLayanan;
-use Filament\Resources\Resource;
-use App\Filament\Resources\DetailLayananResource\Pages;
-use App\Filament\Resources\DetailLayananResource\RelationManagers;
-use App\Models\DetailLayanan;
 use Filament\Forms;
 use Filament\Forms\Form;
-use Filament\Forms\Components\Select; // penambahan
-use Filament\Forms\Components\TextInput; // penambahan
+use Filament\Forms\Components\Select;
+use Filament\Forms\Components\TextInput;
 use Filament\Resources\Resource;
 use Filament\Tables;
 use Filament\Tables\Table;
@@ -23,7 +13,7 @@ use Filament\Tables\Columns\TextColumn;
 use Filament\Tables\Columns\TextInputColumn;
 use Illuminate\Database\Eloquent\Builder;
 use Illuminate\Database\Eloquent\SoftDeletingScope;
-use Filament\Forms\Components\TextInput; //penambahan
+use App\Models\DetailLayanan;
 use App\Filament\Resources\DetailLayananResource\Pages;
 use App\Filament\Resources\DetailLayananResource\RelationManagers;
 
