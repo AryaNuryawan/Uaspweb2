@@ -7,6 +7,8 @@ use App\Models\Montir;
 use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Forms\Components\TextInput;
+use Filament\Tables\Columns\ImageColumn;
+use Filament\Forms\Components\FileUpload;
 use Filament\Forms\Components\DatePicker;
 use Filament\Forms\Components\Select;
 use Filament\Resources\Resource;
@@ -28,6 +30,7 @@ class MontirResource extends Resource
             ->schema([
                 TextInput::make('nomor')->required(),
                 TextInput::make('nama')->required(),
+                FileUpload::make('foto')->label('Foto Kendaraan')->image()->imagePreviewHeight('200')->directory('fotos')->required(),
                 TextInput::make('gender')->required(),
                 DatePicker::make('tgl_lahir')->required(),
                 TextInput::make('tmp_lahir')->required(),
@@ -44,6 +47,7 @@ class MontirResource extends Resource
             ->columns([
                 TextColumn::make('nomor')->sortable()->searchable(),
                 TextColumn::make('nama')->sortable()->searchable(),
+                ImageColumn::make('foto')->label('Foto')->disk('public')->height(60)->circular(),
                 TextColumn::make('gender'),
                 TextColumn::make('tgl_lahir'),
                 TextColumn::make('tmp_lahir'),

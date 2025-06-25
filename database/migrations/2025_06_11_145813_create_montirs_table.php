@@ -15,6 +15,7 @@ return new class extends Migration
     $table->id();
     $table->string('nomor');
     $table->string('nama', 50);
+    $table->string('foto')->nullable();
     $table->char('gender', 10);
     $table->date('tgl_lahir');
     $table->string('tmp_lahir', 30);

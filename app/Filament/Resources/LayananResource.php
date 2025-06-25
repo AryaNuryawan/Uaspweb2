@@ -8,6 +8,7 @@ use Filament\Forms;
 use Filament\Forms\Form;
 use Filament\Forms\Components\TextInput;
 use Filament\Forms\Components\Textarea;
+use Filament\Tables\Columns\ImageColumn;
 use Filament\Forms\Components\FileUpload;
 use Filament\Resources\Resource;
 use Filament\Tables;
@@ -64,6 +65,7 @@ class LayananResource extends Resource
             ->columns([
                 TextColumn::make('kode')->label('Kode')->sortable()->searchable(),
                 TextColumn::make('nama')->label('Nama')->sortable()->searchable(),
+                ImageColumn::make('foto_kendaraan')->label('Foto')->disk('public')->height(60)->circular(),
                 TextColumn::make('deskripsi')->label('Deskripsi')->limit(30),
                 TextColumn::make('total_biaya')->label('Total Biaya')->money('IDR', true),
                 TextColumn::make('rating')->label('Rating')->sortable(),

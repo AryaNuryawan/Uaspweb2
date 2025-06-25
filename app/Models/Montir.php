@@ -12,6 +12,7 @@ class Montir extends Model
         'nomor',
         'nama',
         'gender',
+        'foto',
         'tgl_lahir',
         'tmp_lahir',
         'keahlian',
